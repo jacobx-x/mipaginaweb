@@ -1,8 +1,8 @@
 :root {
-    --color-primario: #13c08c;
-    --color-secundario: #ffffff;
-    --color-acento: #112fa9;
-    --color-texto: #74666677;
+    --color-primario: #1c7c5f;
+    --color-secundario: #f5ecec;
+    --color-acento: #0fc3e2;
+    --color-texto: #ffffff77;
     --color-fondo-suave: #37161611;
     --transition: all 0.4s ease;
 
@@ -31,3 +31,32 @@ header {
     top: 0;
     z-index: 1000;
 }
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    justify-content: center;
+    gap: 30px
+}
+
+nav ul li a {
+    color: var(--color-secundario);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: var(--transition);
+}
+
+nav ul li a:hover {
+    color: var(--color-acento);
+}
+
